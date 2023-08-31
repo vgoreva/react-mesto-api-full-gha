@@ -51,7 +51,7 @@ class Auth {
 }
 
 const auth = new Auth({
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'http://goreva.nomoredomainsicu.ru/',
 })
 
 export default auth

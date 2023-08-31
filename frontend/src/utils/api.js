@@ -118,7 +118,7 @@ class Api {
 }
 
 const api = new Api({
-    baseUrl: 'http://localhost:3000'
+    baseUrl: 'http://goreva.nomoredomainsicu.ru/'
   })
   
 export default api;
