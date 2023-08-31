@@ -118,7 +118,7 @@ class Api {
 }
 
 const api = new Api({
-    baseUrl: 'http://127.0.0.1:27017:3000'
+    baseUrl: 'http://localhost:3000'
   })
   
 export default api;
