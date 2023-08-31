@@ -51,7 +51,7 @@ class Auth {
 }
 
 const auth = new Auth({
-    baseUrl: 'http://http://api.goreva.nomoredomainsicu.ru/',
+    baseUrl: 'http://api.goreva.nomoredomainsicu.ru/',
 })
 
 export default auth
