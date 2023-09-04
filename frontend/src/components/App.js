@@ -251,7 +251,7 @@ function App() {
               />
               } />
 
-            <Route path='/signup' element={
+            <Route path='/sign-up' element={
               <div>
                 <Header
                   name='signup' />
@@ -261,7 +261,7 @@ function App() {
               </div>
             } />
 
-            <Route path='/signin' element={
+            <Route path='/sign-in' element={
               <div>
                 <Header
                   name='signin' />
