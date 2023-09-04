@@ -44,9 +44,9 @@ function App() {
   const navigate = useNavigate()
 
   //Обработчики регистрации и аутенификации
-  function handleRegister(data) {
+  function handleRegister(email, password) {
     setIsSend(true);
-    auth.registration(data)
+    auth.registration(email, password)
       .then(() => {
         setIsAuthPopupOpen(true);
         setEventListnerForEsc();
