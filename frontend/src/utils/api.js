@@ -118,7 +118,7 @@ class Api {
 }
 
 const api = new Api({
-    baseUrl: 'http://goreva.nomoredomainsicu.ru/'
+    baseUrl: 'https://goreva.nomoredomainsicu.ru/'
   })
   
 export default api;

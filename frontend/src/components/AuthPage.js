@@ -7,7 +7,7 @@ function AuthPage({ name, title, children, titleButton, onSubmit }) {
             <form className="login__form" name={`login_type_${name}`} noValidate="" onSubmit={onSubmit}>
             {children}
                 <button className={`login__button login__button_type_${name}`} type="submit">{titleButton}</button>
-                {name === "register" ? <span className="login__note">Уже зарегистрированы? <Link to={"/sign-in"} className="login__link"> Войти </Link> </span> : ""}
+                {name === "register" ? <span className="login__note">Уже зарегистрированы? <Link to={"/signin"} className="login__link"> Войти </Link> </span> : ""}
             </form>
         </section>
     )

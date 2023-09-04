@@ -11,7 +11,7 @@ class Auth {
     }
 
     registration(data) {
-        return fetch(`${this._url}/sign-up`, {
+        return fetch(`${this._url}/signup`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -25,7 +25,7 @@ class Auth {
     }
 
     authorization(data) {
-        return fetch(`${this._url}/sign-in`, {
+        return fetch(`${this._url}/signin`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ class Auth {
 }
 
 const auth = new Auth({
-    baseUrl: 'http://goreva.nomoredomainsicu.ru/',
+    baseUrl: 'https://goreva.nomoredomainsicu.ru/',
 })
 
 export default auth

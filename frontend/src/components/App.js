@@ -52,7 +52,7 @@ function App() {
         setEventListnerForEsc();
         setResult(true);
         window.scrollTo(0, 0);
-        navigate('/sign-in');
+        navigate('/signin');
       })
       .catch(error => {
         setIsAuthPopupOpen(true);
@@ -251,7 +251,7 @@ function App() {
               />
               } />
 
-            <Route path='/sign-up' element={
+            <Route path='/signup' element={
               <div>
                 <Header
                   name='signup' />
@@ -261,7 +261,7 @@ function App() {
               </div>
             } />
 
-            <Route path='/sign-in' element={
+            <Route path='/signin' element={
               <div>
                 <Header
                   name='signin' />
