@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 62.84.117.39
 
-Frontend https://...
+Frontend https://goreva.nomoredomainsicu.ru
 
-Backend https://...
+Backend https://api.goreva.nomoredomainsicu.ru
