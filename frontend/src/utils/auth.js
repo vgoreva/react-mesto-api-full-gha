@@ -10,29 +10,29 @@ class Auth {
         return res.json();
     }
 
-    registration(data) {
+    registration(email, password) {
         return fetch(`${this._url}/sign-up`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                email: data.email,
-                password: data.password,
+                email: email,
+                password: password,
             })
         })
             .then(res => this._getResponseData(res));
     }
 
-    authorization(data) {
+    authorization(email, password) {
         return fetch(`${this._url}/sign-in`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                email: data.email,
-                password: data.password,
+                email: email,
+                password: password,
             })
         })
             .then(res => this._getResponseData(res));
