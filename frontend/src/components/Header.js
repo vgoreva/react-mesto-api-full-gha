@@ -15,7 +15,7 @@ function Header({name, userEmail}) {
                 alt="МЕСТО"
             />
 
-            {name === "" || name === "signin" ?
+            {name === "signup" || name === "signin" ?
             <Link to={name === "signup" ? "/sign-in" : "/sign-up"} className="header__link">
                 {name === "signup" ? "Войти" : "Регистрация"}
             </Link>
