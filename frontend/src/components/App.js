@@ -44,15 +44,15 @@ function App() {
   const navigate = useNavigate()
 
   //Обработчики регистрации и аутенификации
-  function handleRegister(email, password) {
+  function handleRegister(data) {
     setIsSend(true);
-    auth.registration(email, password)
+    auth.registration(data)
       .then(() => {
         setIsAuthPopupOpen(true);
         setEventListnerForEsc();
         setResult(true);
         window.scrollTo(0, 0);
-        navigate('/signin');
+        navigate('/sign-in');
       })
       .catch(error => {
         setIsAuthPopupOpen(true);

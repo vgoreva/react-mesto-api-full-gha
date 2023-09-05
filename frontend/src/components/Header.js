@@ -16,14 +16,14 @@ function Header({name, userEmail}) {
             />
 
             {name === "" || name === "signin" ?
-            <Link to={name === "signup" ? "/signin" : "/sign-up"} className="header__link">
+            <Link to={name === "signup" ? "/sign-in" : "/sign-up"} className="header__link">
                 {name === "signup" ? "Войти" : "Регистрация"}
             </Link>
             :
             <>
                 <div className="header__container">
                     <p className="header__email">{userEmail}</p>
-                    <Link to={"/signin"} className="header__logout" onClick={onSignOut}>Выйти</Link>
+                    <Link to={"/sign-in"} className="header__logout" onClick={onSignOut}>Выйти</Link>
                 </div>
             </>
 

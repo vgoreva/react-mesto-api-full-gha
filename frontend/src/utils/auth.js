@@ -10,29 +10,29 @@ class Auth {
         return res.json();
     }
 
-    registration(email, password) {
-        return fetch(`${this._url}/sign-up`, {
+    registration(data) {
+        return fetch(`${this._url}/signup`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                email: email,
-                password: password,
+                email: data.email,
+                password: data.password,
             })
         })
             .then(res => this._getResponseData(res));
     }
 
-    authorization(email, password) {
-        return fetch(`${this._url}/sign-in`, {
+    authorization(data) {
+        return fetch(`${this._url}/signin`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                email: email,
-                password: password,
+                email: data.email,
+                password: data.password,
             })
         })
             .then(res => this._getResponseData(res));
@@ -51,7 +51,7 @@ class Auth {
 }
 
 const auth = new Auth({
-    baseUrl: 'https://api.goreva.nomoredomainsicu.ru',
+    baseUrl: 'http://localhost:3000',
 })
 
 export default auth
