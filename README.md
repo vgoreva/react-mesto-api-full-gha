@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 62.84.117.39
+IP-адрес 158.160.48.89
 
 Frontend https://goreva.nomoredomainsicu.ru
 
